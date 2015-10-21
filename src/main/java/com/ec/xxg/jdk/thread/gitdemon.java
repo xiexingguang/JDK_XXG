@@ -5,6 +5,6 @@ package com.ec.xxg.jdk.thread;
  */
 public class gitdemon {
     public static void main(String[] args) {
-        System.out.println("hello world");
+        System.out.println("hello world,hello world");
     }
 }
