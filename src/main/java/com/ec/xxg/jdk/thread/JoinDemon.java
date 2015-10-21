@@ -9,8 +9,6 @@
 
 package com.ec.xxg.jdk.thread;
 
-import org.apache.log4j.chainsaw.Main;
-
 /**
  * ClassName:JoinDemon <br/>
  * Function: TODO ADD FUNCTION. <br/>
@@ -38,7 +36,7 @@ public class JoinDemon {
 		  @Override
 		  public void run(){
 			  for(int i = 0; i  < 100;i++){
-				  System.out.println(Thread.currentThread().getName()+"======运行中。。。");
+				  System.out.println(Thread.currentThread().getName()+"======运行中。。。heihei");
 			  }
 		  }
 	  }
@@ -47,7 +45,7 @@ public class JoinDemon {
 	  public static void main(String[] args) throws InterruptedException {
 		   ThreadA a = new ThreadA();
 		   a.start();
-		   a.join();
+		   a.join();  //该方法是让主线程阻塞，让a线程执行完成
 		   ThreadB b = new ThreadB();
 		   b.start();
 	}
